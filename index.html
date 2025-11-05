@@ -1,70 +1,80 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人網站</title>
+    <title>Personal Website</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
+            background-color: #f4f4f4;
             color: #333;
-            text-align: center;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #d92d2f; /* Red color like the one in the background of the photo */
             color: white;
-            padding: 40px 0;
+            padding: 20px 0;
             text-align: center;
         }
-        .content {
-            max-width: 900px;
+        .container {
+            width: 80%;
             margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        .profile-img {
-            width: 150px;
-            height: 150px;
+        .profile-photo {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 5px solid #fff;
-            margin-top: 20px;
+            margin-top: -80px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            font-size: 2em;
+        .content {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pdf-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .pdf-list li {
             margin: 10px 0;
         }
-        p {
-            font-size: 1.2em;
-            color: #555;
-            line-height: 1.6;
-            margin: 10px 0;
+        .pdf-list a {
+            text-decoration: none;
+            color: #d92d2f;
+            font-weight: bold;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
-            margin-top: 40px;
+        .pdf-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>歡迎來到我的網站！</h1>
+        <h1>Your Name</h1>
+        <p>Welcome to My Personal Website</p>
     </header>
 
-    <div class="content">
-        <!-- 替換 'profile.jpg' 為你自己的圖片檔名 -->
-        <img src="profile.jpg" alt="我的照片" class="profile-img">
-        
-        <h2>你好！我是 [你的名字]</h2>
-        <p>我目前擔任軍官，擁有多年的軍事服務經驗。作為一名軍官，我致力於維護國家安全並領導我的隊伍。除了軍事工作外，我也積極參與各種培訓和學習，以提升自身的領導能力和專業知識。</p>
+    <div class="container">
+        <img src="myphoto.jpg" alt="Your Photo" class="profile-photo">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Write a short introduction about yourself here. You can talk about your background, your interests, and what you do professionally.</p>
 
-        <p>我熱愛挑戰，不僅在軍事訓練中全力以赴，也在生活中追求自我成長。我對領導力、團隊合作以及解決問題的能力充滿熱情，並且相信這些品質不僅限於軍事領域，也能應用到其他各種環境。</p>
-
-        <p>在業餘時間，我喜歡閱讀軍事歷史、運動健身以及與家人朋友共享快樂時光。這些
+            <h2>My Work</h2>
+            <p>Here are some of my recent works in PDF format:</p>
+            <ul class="pdf-list">
+                <li><a href="work1.pdf" target="_blank">Work 1</a></li>
+                <li><a href="work2.pdf" target="_blank">Work 2</a></li>
+                <li><a href="work3.pdf" target="_blank">Work 3</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
